@@ -1,0 +1,167 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  display: flex;
+  height:100vh;
+  width:100vw;
+}
+
+.left-side-page{
+  display: flex;
+  flex-direction: column;
+  background-color: #65b6d0;
+  width:210px;
+  height:100%;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.main-content-container{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:100%;
+  background-color: black;
+}
+
+.main-content{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:90%;
+  background-image: url('./image-icon/map.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.bottom-page{
+  display: flex;
+  height:25%;
+  font-weight: 200;
+  font-family: sans-serif;
+  background-color: purple;
+}
+
+.personal-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex:2;
+  max-height: 210px;
+  margin: 0px 5px;
+  padding-bottom: 15px;
+  color:#fff;
+  border-bottom: 2px solid #fff;
+}
+
+.personal-total{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  flex:1;
+  max-height: 195px;
+  color:#fff;
+  border-bottom: 2px solid #fff;
+  margin: 0px 5px;
+}
+
+.personal-options-container{
+  flex:3;
+  display: flex;
+  flex-direction: column;
+  color:#fff;
+}
+
+.personal-pic{
+  background-image: url('./image-icon/old-lady.jpg');
+  background-size: cover;
+  border-radius: 20px;
+  width:100px;
+  height:100px;
+}
+
+#profile-welcome{
+  size:20px;
+}
+
+.personal-options{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex:1;
+}
+
+.options-image{
+  width:35px;
+  height:35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.options-text{
+  width: 75px;
+  height:35px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+
+.comparison-info-container{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.comparison-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width:75%;
+  height:75%;
+  border-radius: 10px;
+
+  background-color: #f1f1d7;
+}
+
+.icon-container{
+  background-image: url('./image-icon/Marker-50.png');
+  background-size: cover;
+  width:50px;
+  height:50px;
+}
+
+.find-trails-container{
+margin-top: 5px;
+padding:5px 10px;
+border-radius: 10px;
+background-color: #ff7921;
+color:#fff;
+font-weight: 200;
+font-family: sans-serif;
+}
+
+#meals-img{
+  background-image: url('./image-icon/Restaurant Filled-50.png');
+}
+
+#route-img{
+  background-image: url('./image-icon/Treasure Map Filled-50.png');
+}
+
+#runner-img{
+  background-image: url('./image-icon/Running-48.png');
+}
+
+#group-img{
+  background-image: url('./image-icon/User Groups Filled-50.png');
+}
