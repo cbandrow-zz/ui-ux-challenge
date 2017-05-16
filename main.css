@@ -135,7 +135,6 @@ body{
   width:75%;
   height:75%;
   border-radius: 10px;
-
   background-color: #f1f1d7;
 }
 
@@ -212,6 +211,8 @@ body{
 
   .personal-options-container{
     flex: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .personal-options{
@@ -220,6 +221,7 @@ body{
     width: 66%;
     height: 50px;
     min-width: 320px;
+    border-bottom: 1px solid #fff;
   }
 
   .options-text, p{
