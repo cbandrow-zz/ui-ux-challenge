@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'Open Sans'
+  font-weight: 400;
 }
 
 body{
   display: flex;
   height:100vh;
   width:100vw;
+}
 
+h3{
+  font-weight: 700;
 }
 
 .left-side-page{
@@ -116,6 +123,7 @@ body{
   height:35px;
   padding-right: 10px;
   text-align: center;
+  font-weight: 700;
 }
 
 .comparison-info-container{
@@ -150,8 +158,12 @@ body{
   border-radius: 10px;
   background-color: #ff7921;
   color:#fff;
-  font-weight: 200;
+  font-weight: 400;
   font-family: sans-serif;
+}
+
+.mile-info{
+  font-weight: 700;
 }
 
 #meals-img{
