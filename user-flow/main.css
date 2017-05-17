@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 *{
   margin: 0px;
   padding: 0px;
+  font-family: 'Open Sans'
+  font-weight: 400;
 }
 
 body{
@@ -9,12 +13,16 @@ body{
   width:100vw;
 }
 
+h3{
+  font-weight: 700;
+}
+
 .left-side-page{
   display: flex;
   flex-direction: column;
   background-color: #65b6d0;
-  width:210px;
-  height:100%;
+  width: 210px;
+  height: 100%;
   font-weight: 200;
   font-family: sans-serif;
 }
@@ -22,8 +30,8 @@ body{
 .main-content-container{
   display: flex;
   flex-direction: column;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   background-color: black;
 }
 
@@ -33,42 +41,45 @@ body{
   justify-content: center;
   align-items: center;
   height:90%;
-  background-image: url('./image-icon/map.jpg');
+  background-image: url('./image-icon/map2.png');
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.3;
 }
 
 .bottom-page{
   display: flex;
-  height:25%;
+  height: 25%;
   font-weight: 200;
   font-family: sans-serif;
   background-color: purple;
 }
 
-.personal-info{
+.personal-info, .personal-total, .personal-miles {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex:2;
-  max-height: 210px;
-  margin: 0px 5px;
-  padding-bottom: 15px;
   color:#fff;
   border-bottom: 2px solid #fff;
 }
 
+.personal-info{
+  max-height: 210px;
+  margin: 0px 5px;
+  padding-bottom: 15px;
+}
+
 .personal-total{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  flex:1;
+  height: 15%;
+  max-height: 195px;
+  margin: 0px 5px;
+}
+
+.personal-miles{
+  /*flex:1;*/
+  height: 15%;
   max-height: 195px;
   color:#fff;
-  border-bottom: 2px solid #fff;
   margin: 0px 5px;
 }
 
@@ -83,12 +94,14 @@ body{
   background-image: url('./image-icon/old-lady.jpg');
   background-size: cover;
   border-radius: 20px;
-  width:100px;
-  height:100px;
+  width: 85px;
+  height: 85px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #profile-welcome{
-  size:20px;
+  size: 20px;
 }
 
 .personal-options{
@@ -110,8 +123,8 @@ body{
   height:35px;
   padding-right: 10px;
   text-align: center;
+  font-weight: 700;
 }
-
 
 .comparison-info-container{
   display: flex;
@@ -129,7 +142,6 @@ body{
   width:75%;
   height:75%;
   border-radius: 10px;
-
   background-color: #f1f1d7;
 }
 
@@ -141,13 +153,17 @@ body{
 }
 
 .find-trails-container{
-margin-top: 5px;
-padding:5px 10px;
-border-radius: 10px;
-background-color: #ff7921;
-color:#fff;
-font-weight: 200;
-font-family: sans-serif;
+  margin-top: 5px;
+  padding:5px 10px;
+  border-radius: 10px;
+  background-color: #ff7921;
+  color:#fff;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.mile-info{
+  font-weight: 700;
 }
 
 #meals-img{
@@ -164,4 +180,94 @@ font-family: sans-serif;
 
 #group-img{
   background-image: url('./image-icon/User Groups Filled-50.png');
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    flex-direction: column;
+    height:150vh;
+  }
+  .left-side-page{
+    width: 100%;
+    height: 120vh;
+  }
+
+  .main-content-container{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .personal-pic{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width:100px;
+    height:100px;
+  }
+ .personal-total p, .personal-miles p{
+   font-size: 18px;
+ }
+
+  .personal-info{
+    height: 150px;
+  }
+
+  .personal-total{
+    min-height: 58px;
+  }
+
+  .personal-miles{
+    min-height: 58px;
+  }
+
+  .personal-options-container{
+    flex: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .personal-options{
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    height: 50px;
+    min-width: 320px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .options-text, p{
+    font-size: 16px;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .comparison-info p{
+    font-size: 15px;
+  }
+  #profile-welcome{
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  body{
+    flex-direction: column;
+    height: 180vh;
+  }
+  .left-side-page{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-content-container{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .comparison-info p{
+    font-size: 14px;
+  }
+
 }
