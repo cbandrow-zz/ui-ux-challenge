@@ -118,7 +118,6 @@ body{
   text-align: center;
 }
 
-
 .comparison-info-container{
   display: flex;
   flex:1;
@@ -178,7 +177,7 @@ body{
   }
   .left-side-page{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
   }
 
   .main-content-container{
