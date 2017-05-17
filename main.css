@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans'
+  font-weight: 400;
+}
+
+body{
+  display: flex;
+  height:100vh;
+  width:100vw;
+}
+
+h3{
+  font-weight: 700;
+}
+
+.left-side-page{
+  display: flex;
+  flex-direction: column;
+  background-color: #7A9E9F;
+  width: 210px;
+  height: 100%;
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.main-content-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.main-content{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:90%;
+  background-image: url('./image-icon/map2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bottom-page{
+  display: flex;
+  height: 25%;
+  font-weight: 200;
+  font-family: sans-serif;
+  background-color: #B8D8D8;
+}
+
+.personal-info, .personal-total, .personal-miles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color:#fff;
+  border-bottom: 2px solid #fff;
+}
+
+.personal-info{
+  max-height: 210px;
+  margin: 0px 5px;
+  padding-bottom: 15px;
+}
+
+.personal-total{
+  height: 15%;
+  max-height: 195px;
+  margin: 0px 5px;
+}
+
+.personal-miles{
+  /*flex:1;*/
+  height: 15%;
+  max-height: 195px;
+  color:#fff;
+  margin: 0px 5px;
+}
+
+.personal-options-container{
+  flex:3;
+  display: flex;
+  flex-direction: column;
+  color:#fff;
+}
+
+.personal-pic{
+  background-image: url('./image-icon/old-lady.jpg');
+  background-size: cover;
+  border-radius: 20px;
+  width: 85px;
+  height: 85px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#profile-welcome{
+  size: 20px;
+}
+
+.personal-options{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex:1;
+}
+
+.options-image{
+  width:35px;
+  height:35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.options-text{
+  width: 75px;
+  height:35px;
+  padding-right: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.comparison-info-container{
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  background-color: #B8D8D8;
+}
+
+.comparison-info-container:nth-child(odd){
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.comparison-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width:75%;
+  height:75%;
+  border-radius: 10px;
+  background-color: #f1f1d7;
+}
+
+.icon-container{
+  background-image: url('./image-icon/Marker-50.png');
+  background-size: cover;
+  width:50px;
+  height:50px;
+}
+
+.find-trails-container{
+  margin-top: 5px;
+  padding:5px 10px;
+  border-radius: 10px;
+  background-color: #ff7921;
+  color:#fff;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.mile-info{
+  font-weight: 700;
+}
+
+#meals-img{
+  background-image: url('./image-icon/Restaurant Filled-50.png');
+}
+
+#route-img{
+  background-image: url('./image-icon/Treasure Map Filled-50.png');
+}
+
+#runner-img{
+  background-image: url('./image-icon/Running-48.png');
+}
+
+#group-img{
+  background-image: url('./image-icon/User Groups Filled-50.png');
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    flex-direction: column;
+    height:150vh;
+  }
+  .left-side-page{
+    width: 100%;
+    height: 120vh;
+  }
+
+  .main-content-container{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .personal-pic{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width:100px;
+    height:100px;
+  }
+ .personal-total p, .personal-miles p{
+   font-size: 18px;
+ }
+
+  .personal-info{
+    height: 150px;
+  }
+
+  .personal-total{
+    min-height: 58px;
+  }
+
+  .personal-miles{
+    min-height: 58px;
+  }
+
+  .personal-options-container{
+    flex: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .personal-options{
+    margin-left: auto;
+    margin-right: auto;
+    width: 66%;
+    height: 50px;
+    min-width: 320px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .options-text, p{
+    font-size: 16px;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .comparison-info p{
+    font-size: 15px;
+  }
+  #profile-welcome{
+    font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  body{
+    flex-direction: column;
+    height: 180vh;
+  }
+  .left-side-page{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-content-container{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .comparison-info p{
+    font-size: 14px;
+  }
+
+}
